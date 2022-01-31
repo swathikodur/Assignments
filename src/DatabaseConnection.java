@@ -6,7 +6,7 @@ public class DatabaseConnection {
 
 	public static void main(String[] args)throws ClassNotFoundException,SQLException {
 		// TODO Auto-generated method stub
-     Class.forName("com.mysql.jdbc.Driver");
+     Class.forName("com.mysql.cj.jdbc.Driver");
      
      String url="jdbc:mysql://localhost:3306/mondee";
      String username="root";
