@@ -9,7 +9,7 @@ class EmployeeData
 {
 	static Scanner sc=new Scanner(System.in);
 	
-	 static void insert(Statement st)throws SQLException{
+	static  void insert(Statement st)throws SQLException{
 		System.out.println("Enter eid,ename,esalary");
 		int eid=sc.nextInt();
 		String ename=sc.next();
@@ -36,7 +36,7 @@ class EmployeeData
 		}
 	}
 	
-	 static void select(Statement st)throws SQLException{
+	  static void select(Statement st)throws SQLException{
 		ResultSet rs=st.executeQuery("select * from infosys");
 		while(rs.next()) {
 			System.out.println(rs.getInt(1)+" "+rs.getString(2)+" "+rs.getInt(3));
